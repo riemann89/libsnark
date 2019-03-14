@@ -210,10 +210,6 @@ if("${CPPDEBUG}")
   add_definitions(-D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC)
 endif()
 
-if("${IS_LIBSNARK_PARENT}")
-  add_definitions(-DIS_LIBSNARK_PARENT)
-endif()
-
 if("${PERFORMANCE}")
   add_definitions(-DNDEBUG)
   set(
